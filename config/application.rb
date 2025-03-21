@@ -18,5 +18,11 @@ module SampleApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    console do
+      require "pry"
+      config.console = Pry
+    end
   end
 end
+
